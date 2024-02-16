@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        .input-container {
+            border: 1px solid black;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .input-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="input-container">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Enter your age">
+        </div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <br><br>
+
+        <div style="display: flex; flex-direction: row;">
+            <label for="male" style="margin-right: 5px;">
+                Male
+                <input type="radio" id="male" name="fav_language" value="MALE">
+            </label>
+        
+            <label for="female" style="margin-right: 5px;">
+                Female
+                <input type="radio" id="female" name="fav_language" value="FEMALE">
+            </label>
+        </div>
+
+        <br>
+
+        <label for="remember" style="display: inline-block;">
+            Remember me:
+            <input type="checkbox" id="remember" name="remember" style="float: right;">
+        </label>
+
+        <br><br>
+
+        <label for="city">Select your city:</label>
+        <select id="city" name="city">
+            <option value="kyiv">Kyiv</option>
+            <option value="lviv">Lviv</option>
+            <option value="odesa">Odessa</option>
+            <option value="kharkiv">Kharkiv</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="message">Enter your message:</label>
+        
+        <textarea id="message" name="message" rows="1" cols="15"></textarea>
+
+        <br>
+        <br>
+
+        <input type="button" onclick="alert('Hello World!')" value="Submit">
+    </form>
+</body>
+</html>

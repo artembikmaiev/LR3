@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table>
+        <caption title="caption Визначає підпис до таблиці">Місячні заощадження</caption>
+        <tr title="tr Визначає рядок у таблиці">
+          <th title="th Визначає комірку заголовка в таблиці">Місяць</th>
+          <th>Заощадження</th>
+        </tr>
+        <tr>
+          <td title="td Визначає комірку в таблиці">Серпень</td>
+          <td>1000 грівнів</td>
+        </tr>
+        <tr>
+          <td>Вересень</td>
+          <td>900 грівнів</td>
+        </tr>
+    </table>
+
+    <h1>Thead, Tbody, Tfoot</h1>
+
+    <table>
+        <thead title="thead Групує вміст заголовка в таблиці">
+          <tr>
+            <th>Місяць</th>
+            <th>Заощадження</th>
+          </tr>
+        </thead>
+        <tbody title="tbody Групує вміст тіла в таблицю">
+          <tr>
+            <td>Серпень</td>
+            <td>1000 грівнів</td>
+          </tr>
+          <tr>
+            <td>Вересень</td>
+            <td>900 грівнів</td>
+          </tr>
+        </tbody>
+        <tfoot title="tfoot Групує вміст нижнього колонтитула в таблицю">
+          <tr>
+            <td>Сума</td>
+            <td>1900 грівнів</td>
+          </tr>
+        </tfoot>
+      </table>
+
+</body>
+</html>
